@@ -1,0 +1,105 @@
+
+/**
+ *
+ * @author Brian Saaristo
+ */
+public class Brian_A03_17382481 {
+
+    //add
+    static double addTotal = 0.0;
+    static double subtractTotal = 0;
+    static double total = 0.0;
+    static double numberOne = 101.50;
+    static int numberTwo = 202;
+    static int numberThree = 303;
+    static int numberFour = 404;
+    // mult
+    static double widgetTotalPrice = 0.0;
+    static double widgetPrice = 2.5;
+    static int widgetQuantity = 30;
+    //modulo
+    static int fifteen = 15;
+    static int eighteen = 18;
+    static int theModulo = 0;
+    static int TWO = 2;
+    //compound
+    static int currentYear = 2020;
+    static double currentSalary = 40000.0;
+    static double lower = 100;
+    //operator precedence
+    static double results1 = (25 * 10) / 2;
+    static double results2 = 3 + (4 * 5);
+    static double results3 = (3 + 4) * 5;
+    static double results4 = (1 + 2) + 3 - 4 + 5;
+    static double results5 = 1 + 2 + 3 - (4 + 5);
+    static double results6 = (20 * 10 / 2);
+    static double results7 = (2.0 / 3 * 3 * 3);
+    static double results8 = 2 / (3.0 * 3) * 3;
+    static double results9 = 2.0 / (3.0 * 3 * 3);
+    static int results10 = 2 * (2 - 2);
+    //
+
+    public static void main(String[] args) {
+        int apxple; 
+        apxple = 15;
+
+        mathOperators();
+
+    }
+
+    private static void mathOperators() {
+        //add
+        addTotal = numberOne + numberTwo;
+        subtractTotal = numberThree - numberFour;
+        System.out.print(numberOne);
+        System.out.print(" + ");
+        System.out.print(numberTwo);
+        System.out.print(" = ");
+        System.out.println(numberOne + numberTwo);
+
+        System.out.print(numberThree);
+        System.out.print(" - ");
+        System.out.print(numberFour);
+        System.out.print(" = ");
+        System.out.println(numberThree - numberFour);
+
+        System.out.print("The Total is ");
+        System.out.println(addTotal + subtractTotal);
+        //multi
+        widgetTotalPrice = widgetQuantity * widgetPrice;
+        System.out.println(widgetQuantity + " Widgets at " + widgetPrice + " each is " + widgetPrice * widgetQuantity);
+        System.out.println("Lets check your math");
+        System.out.println(widgetPrice * widgetQuantity + "/" + widgetQuantity + " is " + widgetPrice);
+        //modulo
+        System.out.println("The remainder of " + fifteen + " % " + TWO + " is " + fifteen % TWO);
+        System.out.println("The remainder of " + eighteen + " % " + TWO + " is " + eighteen % TWO);
+        System.out.println("The remainder of " + fifteen + " % " + eighteen + " is " + fifteen % eighteen);
+        System.out.println("The remainder of " + eighteen + " % " + fifteen + " is " + eighteen % fifteen);
+        //compound
+        System.out.println("The intial value of year is " + currentYear);
+        currentYear += 25;
+        System.out.println("When i add 25 to year, the new value of year is " + currentYear);
+        currentYear -= 75;
+        System.out.println("First i added 25 to year, now i subtracted 75 from the adjusted year. The latest value of year is " + currentYear);
+        System.out.println("My initial salary is " + currentSalary);
+        currentSalary = currentSalary / 10 + currentSalary;
+        System.out.println("With a 10% raise, my salary is now " + currentSalary);
+        System.out.println("The initial value of lower is " + lower);
+        lower /= currentYear;
+        System.out.println("The new value of lower is " + lower);
+        //operator precedence
+        System.out.println(results1);
+        System.out.println(results2);
+        System.out.println(results3);
+        System.out.println(results4);
+        System.out.println(results5);
+        System.out.println(results6);
+        System.out.println(results7);
+        System.out.println(results8);
+        System.out.println(results9);
+        System.out.println(results10);
+        ///////
+
+    }
+
+}
